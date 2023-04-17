@@ -1,0 +1,25 @@
+package collection;
+
+import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
+
+public class removeDuplicate {
+	public static void main(String[] args) {
+          List<Integer> i=new ArrayList<>();
+          i.add(2);
+          i.add(5);
+          i.add(3);
+          i.add(8);
+          i.add(5);
+          i.add(3);
+          //set doesnt change the order of the arraylist but it doesn't copu duplicate elements.....
+          Set<Integer> s=new LinkedHashSet<>();
+          //clear() we reomve the array set and copy the elements without duplicacy......
+          s.clear();
+          s.addAll(i);
+          System.out.println(s);
+	}
+
+}
