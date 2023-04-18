@@ -1,0 +1,24 @@
+package collection;
+import java.util.*;
+public class compareTwoarraylist {
+	public static void main(String[] args) {
+		ArrayList<String> c=new ArrayList<String>();
+		c.add("red");
+		c.add("white");
+		c.add("green");
+		c.add("yellow");
+		c.add("blue");
+		ArrayList<String> d=new ArrayList<String>();
+		d.add("red");
+		d.add("white");
+		d.add("green");
+		d.add("blue");
+		ArrayList<String> x=new ArrayList<String>();
+		for(String e:c)
+			x.add( d.contains(e) ? "yes":"NO");
+			System.out.println(x);
+			
+		
+	}
+}
+//OUTPUT:- yes,yes,yes,no,yes
