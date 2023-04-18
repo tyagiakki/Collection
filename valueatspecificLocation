@@ -1,0 +1,19 @@
+package collection;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class valueofSpecifiedKey {
+	public static void main(String[] args) {
+		HashMap<Integer,String> c=new HashMap<>();
+		c.put(1,"red");
+		c.put(2,"ong");
+		c.put(3,"blk");
+		c.put(4,"grn");
+		c.put(5,"ylo");
+		Scanner sc=new Scanner(System.in);
+		int x=sc.nextInt();
+		String p=(String)c.get(x);
+		System.out.println(p);
+	}
+}
